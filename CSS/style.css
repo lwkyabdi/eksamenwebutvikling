@@ -1,0 +1,708 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1600px;
+    font-family: 'Inter', sans-serif;
+}
+
+.grid {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-areas: "header header header"
+                         "maincontent maincontent maincontent"
+                         "footer footer footer";
+    
+}
+
+.logo{
+    width: 100px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.contact-header {
+    color: black;
+    background-color: #e6bd43;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 14px;
+}
+
+.aboutservicemain {
+    color: black;
+    background-color: #e6bd43;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 14px;
+}
+
+.aboutusmain {
+    color: black;
+    border: 2px solid;
+    font-weight: bold;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.flexcontain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flexcontain h1 {
+    flex-basis: 100%;
+    border-bottom: 3px solid #e6bd43;
+    max-width: 1500px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.flexcontain article{
+    max-width: 350px;
+    min-width: 200px;
+}
+
+.flexcontain2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flexcontain2 h1 {
+    flex-basis: 100%;
+    border-bottom: 3px solid #e6bd43;
+    padding: 20px;
+}
+
+.flexcontain2 article{
+    flex-grow: 1;
+    max-width: 350px;
+    min-width: 200px;
+    margin-left: -21%;
+}
+
+.flexcontain2 article img{
+    width: 180%;
+    height: auto;
+}
+
+
+.flexcontain3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 80px;
+}
+
+
+.flexcontain3 article.largeflex{
+    max-width: 350px;
+    min-width: 200px;
+}
+
+.flexcontain3 article.largeflex h1{
+    flex-basis: 100%;
+}
+
+.flexcontain3 article.largeflex img{
+    width: 670px;
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+header nav ul li{
+    padding: 14px;
+}
+
+main {
+    grid-area: maincontent;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: #252525;
+
+}
+
+section.sec1 {
+    background-color: #e2e2e2;
+    padding: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sec1 article {
+    flex-grow: 5;
+}
+
+section.sec1 article h1 {
+    font-size: 60px;
+    margin-top: 30px;
+}
+
+section.sec2 {
+    padding: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section.sec3 {
+    padding: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    border-style: solid;
+}
+
+section.sec4 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.sec4 article {
+    text-align: center;
+}
+
+section.sec5 {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #f0eeee;
+}
+
+.newsletterclass {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    padding: 10px;
+}
+
+.newsletterclass input[type=submit] {
+    background-color: #e6bd43;
+    border: none;
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.newsletterclass input[type=text] {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+article.first {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+article.second {
+    margin-top: 200px;
+}
+
+section.sec3 img {
+    float: left;
+    width: 600px;
+}
+
+section.sec3 article {
+    margin-left: 20px;
+}
+
+section.portfolioclass {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+section.portfolioclass article {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+section.portfolioclass h1 {
+    color: #252525;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    font-size: 70px;
+}
+
+section.portfolioclass article img {
+    width: 100%;
+    display: block;
+    opacity: 50%;
+}
+
+section.portfolioclass article img {
+    width: 100%;
+    display: block;
+    opacity: 50%;
+}
+
+section.portfolioclass img {
+    width: 100%;
+    display: block;
+    opacity: 50%;
+}
+
+section.portfolioclass2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+section.portfolioclass2 article {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+
+section.portfolioclass2 article.aboutclass {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    max-width: 30%;
+    height: 70%;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+section.portfolioclass2 img {
+    width: 100%;
+    display: block;
+    opacity: 50%;
+}
+
+
+.exploremain h1 {
+    border-bottom: 3px solid #e6bd43;
+    max-width: 1500px;
+    font-size: 25px;
+    margin: 20px;
+    padding: 15px;
+}
+
+.exploremain nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.exploremain nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border: 0.5px solid;
+    padding: 5px;
+}
+
+.service {
+    text-align: center;
+    font-size: 30px;
+    flex-basis: 100%;
+}
+
+.clients {
+    background-color: #e6bd43;
+    padding: 60px;
+}
+
+.clients figure {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+
+.clients h1 {
+    text-align: center;
+    flex-basis: 100%;
+}
+
+.contactclass {
+    background-color: #e2e2e2;
+    padding: 150px;
+}
+
+.contactclass h1{
+    text-align: center;
+}
+
+.contactmain {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contactmain article p {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contactmain article ul li{
+    list-style: none;
+    gap: 0.5rem;
+}
+
+.inputclass{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+}
+
+.inputclass input[type=submit] {
+    background-color: #e6bd43;
+    border: none;
+    color: black;
+    max-width: 150px;
+    margin-top: 10px;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.inputclass input[type=text] {
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    max-width: 500px;
+    text-decoration: none;
+}
+
+.mapclass iframe {
+    width: 100%;
+}
+
+
+footer article{
+    text-align: center;
+    margin-top: 40px;
+    color: #fff;
+}
+
+footer nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    text-decoration: none;
+    margin-right: 30px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .grid {
+        display: grid;
+        grid-column-gap: 20px;
+        grid-template-areas: "header"
+                             "maincontent"
+                             "footer";
+    }
+
+    header {
+        grid-area: header;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    footer article {
+        align-items: center;
+    }
+    
+    footer article p {
+        text-align: center;
+    }
+
+    .logo {
+        margin-bottom: 5px;
+    }
+
+    header nav ul li {
+        font-size: 20px;
+        padding: 14px;
+    }
+
+    section.sec1 {
+        background-color: #e2e2e2;
+        padding: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    section.sec1 article h1 {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    section.sec2 {
+        padding: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    article.first {
+        text-align: center;
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+
+    section.sec3 {
+        display: flex;
+        justify-content: center;
+    }
+
+    section.sec3 img {
+        width: 200px;
+    }
+    
+    section.sec3 article {
+        margin-left: 20px;
+    }
+
+    .aboutusmain {
+        display: flex;
+        flex-wrap: wrap;
+        color: black;
+        border: 2px solid;
+        font-weight: bold;
+        padding: 14px;
+        text-decoration: none;
+    }
+
+    section.sec4 {
+        display: flex;
+        justify-content: space-around;
+        gap: 1rem;
+        flex-wrap: wrap;
+        padding: 50px;
+    }
+    
+    .sec4 article {
+        min-width: 33%;
+        text-align: center;
+    }
+
+    footer {
+        grid-area: footer;
+        display: flex;
+        padding: 10px;
+        background-color: #252525;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.portfolioclass img {
+        height: 400px;
+        width: 100%;
+        display: block;
+        opacity: 50%;
+    }
+
+    section.portfolioclass h1 {
+        color: #252525;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    .flexcontain h4 {
+        margin-left: 20px;
+    }
+
+    .flexcontain2 h4 {
+        margin-left: 30px;
+    }
+    
+    .flexcontain2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .flexcontain2 h1 {
+        flex-basis: 100%;
+        border-bottom: 3px solid #e6bd43;
+    }
+    
+    .flexcontain2 article{
+        max-width: 350px;
+        min-width: 200px;
+    }
+    
+    .flexcontain2 article img{
+        width: 100%;
+        margin: 30px;
+    }
+    
+    
+    .flexcontain3 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 50px;
+    }
+    
+    
+    .flexcontain3 article.largeflex{
+        max-width: 350px;
+        min-width: 200px;
+    }
+    
+    .flexcontain3 article.largeflex h1{
+        flex-basis: 100%;
+    }
+    
+    .flexcontain3 article.largeflex img{
+        width: 350px;
+    }
+
+    .flexcontain {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .flexcontain h1 {
+        flex-basis: 100%;
+        border-bottom: 3px solid #e6bd43;
+        max-width: 1500px;
+        padding: 10px;
+        margin: 20px;
+    }
+    
+    .flexcontain article{
+        max-width: 350px;
+        min-width: 200px;
+    }
+
+    .flexcontain article img {
+        width: 100%;
+    }
+
+    section.portfolioclass2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    section.portfolioclass2 article {
+        width: 100%;
+        text-align: center;
+    }
+    
+    
+    section.portfolioclass2 article.aboutclass {
+        position: absolute;
+        top: 10%;
+        right: 10%;
+        max-width: 30%;
+        background-color: white;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: left;
+    }
+    
+    section.portfolioclass2 img {
+        width: 100%;
+        display: block;
+        opacity: 50%;
+    }
+
+
+}
+
+    
+@media only screen and (max-width: 400px) {
+    .sec4 article {
+        min-width: 100%;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 1280px) {
+    section.portfolioclass2 {
+        display: none;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    section.portfolioclass2 article {
+        width: 100%;
+        text-align: center;
+    }
+    
+    
+    section.portfolioclass2 article.aboutclass {
+        align-items: center;
+    }
+    
+    section.portfolioclass2 img {
+        width: 100%;
+        display: block;
+        opacity: 50%;
+    }
+
+}
